@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+    </style>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form action="mailto:agentemail@johndoe.com" method="POST" enctype="text/plain">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required><br><br>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required><br><br>
+      
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="propertyType">Property Type:</label>
+      <select id="propertyType" name="propertyType" required>
+        <option value="">Select an option</option>
+        <option value="house">House</option>
+        <option value="condo">Condominium</option>
+      </select><br><br>
+      
+      <label for="bedrooms">Number of Bedrooms:</label>
+      <input type="number" id="bedrooms" name="bedrooms" required><br><br>
+      
+      <label for="bathrooms">Number of Bathrooms:</label>
+      <input type="number" id="bathrooms" name="bathrooms" required><br><br>
+      
+      <label for="priceRange">Price Range:</label>
+      <input type="text" id="priceRange" name="priceRange" required><br><br>
+      
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="5" cols="30"></textarea><br><br>
+      
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+    <a href="./homepage.html"><button>Main Page</button></a>
+  </body>
+</html>
